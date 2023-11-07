@@ -1,0 +1,199 @@
+@font-face {
+  font-family: GFS Neohellenic;
+  src: url(GFSNeohellenic-Regular.ttf);
+}
+body {
+  background-image: url("../portfolio_bigbg_basecolor-01.png");
+  background-size: cover;
+}
+
+.portGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 50px 100px;
+}
+.portGrid .project {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 400px;
+}
+.portGrid .project img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.portGrid .project.--bottom img {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* dark mode user-agent-styles */
+/* min body height */
+body {
+  min-height: 100vh;
+}
+
+a, button {
+  cursor: revert;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input, textarea {
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+          user-select: auto;
+}
+
+li {
+  text-decoration: none;
+  color: #000;
+  list-style-type: none;
+}
+
+nav {
+  text-decoration: none;
+  color: #000;
+  list-style-type: none;
+}
+
+ul {
+  text-decoration: none;
+  color: #000;
+  list-style-type: none;
+}
+
+.topBarName {
+  color: #000;
+  text-align: center;
+  font-family: GFS Neohellenic;
+  font-size: 48px;
+  font-weight: 700;
+  background-color: #fff4eb;
+  width: auto;
+  height: 114px;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.downButt {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 500px;
+  height: 500px;
+}
+
+.navTags {
+  color: #000;
+  text-align: center;
+  font-family: GFS Neohellenic;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+.navTags ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.navTags li {
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff4eb;
+  margin: 10px 20px 10px 20px;
+}
+
+.header {
+  color: #000;
+  text-align: center;
+  font-family: GFS Neohellenic;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 112px;
+}
+
+.titleTags {
+  color: #000;
+  text-align: center;
+  font-family: GFS Neohellenic;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.downButt {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 500px;
+  height: 500px;
+}
+
+.footleft {
+  color: #fff4eb;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 24px;
+}
+
+.footright {
+  color: #fff4eb;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.footright .socialIcons {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,56 @@
+.topBarName{
+    color: #000;
+    text-align: center;
+    font-family: GFS Neohellenic;
+    font-size: 48px;
+    font-weight: 700;
+    background-color: #fff4eb;
+    width: auto;
+    height: 114px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+.downButt{
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    height: 500px;
+}
+
+.navTags{
+    color: #000;
+    text-align: center;
+    font-family: GFS Neohellenic;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+    li{
+        padding: 20px 20px;
+        text-decoration: none;
+        color: #000;
+        background-color: #fff4eb;
+        margin: 10px 20px 10px 20px;
+        
+    }
+    
+}
+
+    
+

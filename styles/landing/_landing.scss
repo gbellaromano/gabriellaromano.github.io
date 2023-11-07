@@ -1,0 +1,57 @@
+.header{
+    color: #000;
+    text-align: center;
+    font-family: GFS Neohellenic;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 112px;
+    //margin-left: 488px;
+    //margin-right: 488px;
+}
+.titleTags{
+    color: #000;
+    text-align: center;
+    font-family: GFS Neohellenic;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+.downButt{
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    height: 500px;
+}
+
+.footleft{
+    color: #fff4eb;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+
+.footright{
+    color: #fff4eb;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+    .socialIcons{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+}
