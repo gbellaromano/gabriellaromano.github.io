@@ -14,7 +14,7 @@
     color: #000;
     text-align: center;
     font-family: GFS Neohellenic;
-    font-size: 24px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
 }
 .downButt{
@@ -30,28 +30,34 @@
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 }
-
-.footleft{
-    color: #fff4eb;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 24px;
-}
-
-.footright{
-    color: #fff4eb;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 24px;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-
-    .socialIcons{
-        width: 50px;
-        height: 50px;
+.footer{
+    margin-right: 20px;
+    margin-left: 20px;
+    .footleft{
+        color: #fff4eb;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px;
+        padding-left: 20px;
+        margin-left: 20px;
+    }
+    
+    .footright{
+        color: #fff4eb;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px;
         display: flex;
         flex-direction: row;
+        justify-content: end;
+    
+        .socialIcons{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+        }
     }
 }
+
