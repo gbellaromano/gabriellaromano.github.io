@@ -10,16 +10,10 @@
     padding-top: 30px;
     margin-bottom: 20px;
 }
-.downButt{
-    display: flex;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    width: 500px;
-    height: 500px;
-}
+
 
 .navTags{
+    text-decoration: none;
     color: #000;
     text-align: center;
     font-family: GFS Neohellenic;
@@ -27,7 +21,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -40,6 +34,8 @@
         justify-content: center;
         justify-content: space-around;
         margin-bottom: 50px;
+        text-decoration: none;
+        
     }
     li{
         padding: 20px 20px;
