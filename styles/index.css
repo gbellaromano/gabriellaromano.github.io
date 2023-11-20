@@ -1,6 +1,6 @@
 @font-face {
   font-family: GFS Neohellenic;
-  src: url(GFSNeohellenic-Regular.ttf);
+  src: url("GFSNeohellenic-Regular.ttf");
 }
 body {
   background-image: url("../portfolio_bigbg_basecolor-01.png");
@@ -11,13 +11,13 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin: 50px 100px;
+  margin: 100px 200px;
 }
 .portGrid .project {
   width: 100%;
   position: relative;
   overflow: hidden;
-  padding-bottom: 400px;
+  padding-bottom: 350px;
 }
 .portGrid .project img {
   position: absolute;
@@ -27,10 +27,6 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.portGrid .project.--bottom img {
-  -o-object-position: bottom;
-     object-position: bottom;
 }
 
 /* makes sizing simpler */
@@ -103,17 +99,14 @@ ul {
   padding-top: 30px;
   margin-bottom: 20px;
 }
-
-.downButt {
-  display: flex;
-  justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-  width: 500px;
-  height: 500px;
+@media screen and (min-width: 430px) {
+  .topBarName {
+    font-size: 32p;
+  }
 }
 
 .navTags {
+  text-decoration: none;
   color: #000;
   text-align: center;
   font-family: GFS Neohellenic;
@@ -121,7 +114,7 @@ ul {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-top: 60px;
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -133,6 +126,7 @@ ul {
   justify-content: center;
   justify-content: space-around;
   margin-bottom: 50px;
+  text-decoration: none;
 }
 .navTags li {
   padding: 20px 20px;
@@ -150,22 +144,30 @@ ul {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-top: 112px;
+  margin-top: 80px;
+}
+@media screen and (min-width: 430px) {
+  .header {
+    font-size: 64px;
+  }
 }
 
 .titleTags {
   color: #000;
   text-align: center;
   font-family: GFS Neohellenic;
-  font-size: 24px;
-  font-style: normal;
+  font-size: 36px;
   font-weight: 700;
-  line-height: normal;
-  margin-top: 60px;
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  justify-content: space-around;
+  gap: 40px;
+}
+@media screen and (min-width: 430px) {
+  .titleTags {
+    font-size: 20px;
+  }
 }
 
 .downButt {
@@ -173,27 +175,115 @@ ul {
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
+}
+@media screen and (min-width: 430px) {
+  .downButt {
+    width: 250px;
+    height: 250px;
+    margin-top: 40px;
+  }
 }
 
-.footleft {
+.footer {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.footer .footleft {
   color: #fff4eb;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 24px;
+  margin-left: 20px;
 }
-
-.footright {
+.footer .footright {
   color: #fff4eb;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
+  margin-right: 20px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   justify-content: end;
+  padding-bottom: 20px;
 }
-.footright .socialIcons {
-  width: 50px;
-  height: 50px;
+.footer .footright .socialIcons {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
   display: flex;
   flex-direction: row;
+}
+
+.topBarName.--object {
+  margin-bottom: 40px;
+  font-size: 30px;
+  height: 80px;
+}
+
+.backButton {
+  width: 200px;
+  height: 200px;
+  rotate: 90deg;
+}
+
+.projectBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 100px;
+}
+.projectBox .projectImage {
+  width: 40%;
+  height: 40%;
+  margin-right: 40px;
+}
+.projectBox .projectText {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.projectBox .projectText .projectTitle {
+  font-family: GFS Neohellenic;
+  font-size: 40px;
+  font-weight: 700;
+}
+.projectBox .projectText .projectMedium {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.progressTitle {
+  font-family: GFS Neohellenic;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.carasol {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  width: 40%;
+  height: 40%;
+}
+.carasol .carasolObject {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }/*# sourceMappingURL=index.css.map */

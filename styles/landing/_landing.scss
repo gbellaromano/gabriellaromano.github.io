@@ -7,6 +7,10 @@
     font-weight: 700;
     line-height: normal;
     margin-top: 80px;
+    @include respond ('430px'){
+        font-size: 64px;
+    }
+
     //margin-left: 488px;
     //margin-right: 488px;
 }
@@ -20,7 +24,10 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 80px;
+    gap: 40px;
+    @include respond ('430px'){
+        font-size: 20px;
+    }
     
 
 }
@@ -31,10 +38,16 @@
     margin-left: auto;
     width: 300px;
     height: 300px;
+    @include respond ('430px'){
+        width: 250px;
+        height: 250px;
+        margin-top: 40px;
+    }
 }
 .footer{
     margin-right: 20px;
     margin-left: 20px;
+    margin-top: 50px;
     display: flex;
     align-content: center;
     justify-content: space-between;

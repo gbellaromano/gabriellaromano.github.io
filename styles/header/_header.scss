@@ -1,68 +1,55 @@
-.header{
+.topBarName{
     color: #000;
     text-align: center;
     font-family: GFS Neohellenic;
-    font-size: 128px;
+    font-size: 48px;
+    font-weight: 700;
+    background-color: #fff4eb;
+    width: auto;
+    height: 114px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    @include respond('430px'){
+        font-size: 32p;
+    }
+}
+
+
+.navTags{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    font-family: GFS Neohellenic;
+    font-size: 35px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 80px;
-    //margin-left: 488px;
-    //margin-right: 488px;
-}
-.titleTags{
-    color: #000;
-    text-align: center;
-    font-family: GFS Neohellenic;
-    font-size: 36px;
-    font-weight: 700;
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 80px;
-    
+    justify-content: space-around;
 
-}
-.downButt{
-    display: flex;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    width: 300px;
-    height: 300px;
-}
-.footer{
-    margin-right: 20px;
-    margin-left: 20px;
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-    .footleft{
-        color: #fff4eb;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 24px;
-        margin-left: 20px;
-    }
-    
-    .footright{
-        color: #fff4eb;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 18px;
-        margin-right: 20px;
-        margin-bottom: 10px;
+
+    ul{
         display: flex;
         flex-direction: row;
-        justify-content: end;
-        padding-bottom: 20px;
-    
-        .socialIcons{
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-            display: flex;
-            flex-direction: row;
-        }
+        justify-content: center;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        text-decoration: none;
+        
     }
+    li{
+        padding: 20px 20px;
+        text-decoration: none;
+        color: #000;
+        background-color: #fff4eb;
+        margin: 10px 20px 10px 20px;
+        
+    }
+    
 }
+
+    
 
