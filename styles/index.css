@@ -2,9 +2,12 @@
   font-family: GFS Neohellenic;
   src: url("GFSNeohellenic-Regular.ttf");
 }
-body {
-  background-image: url("../portfolio_bigbg_basecolor-01.png");
-  background-size: cover;
+.hamburger {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .portGrid {
@@ -13,11 +16,23 @@ body {
   gap: 30px;
   margin: 100px 200px;
 }
+@media screen and (max-width: 430px) {
+  .portGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 30px 50px;
+  }
+}
 .portGrid .project {
   width: 100%;
   position: relative;
   overflow: hidden;
   padding-bottom: 350px;
+}
+@media screen and (max-width: 430px) {
+  .portGrid .project {
+    padding-bottom: 250px;
+  }
 }
 .portGrid .project img {
   position: absolute;
@@ -27,6 +42,11 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.portGrid .project .project:hover {
+  width: 120%;
+  height: 120%;
+  transition: 0.5s ease;
 }
 
 /* makes sizing simpler */
@@ -99,7 +119,7 @@ ul {
   padding-top: 30px;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 430px) {
+@media screen and (max-width: 430px) {
   .topBarName {
     font-size: 32p;
   }
@@ -146,7 +166,7 @@ ul {
   line-height: normal;
   margin-top: 80px;
 }
-@media screen and (min-width: 430px) {
+@media screen and (max-width: 430px) {
   .header {
     font-size: 64px;
   }
@@ -164,28 +184,41 @@ ul {
   justify-content: center;
   gap: 40px;
 }
-@media screen and (min-width: 430px) {
+@media screen and (max-width: 430px) {
   .titleTags {
     font-size: 20px;
   }
 }
 
-.downButt {
+.bounce {
   display: flex;
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
   width: 300px;
   height: 300px;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
 }
-@media screen and (min-width: 430px) {
-  .downButt {
+@media screen and (max-width: 430px) {
+  .bounce {
     width: 250px;
     height: 250px;
-    margin-top: 40px;
   }
 }
-
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
 .footer {
   margin-right: 20px;
   margin-left: 20px;
@@ -230,6 +263,12 @@ ul {
   height: 200px;
   rotate: 90deg;
 }
+@media screen and (max-width: 430px) {
+  .backButton {
+    width: 100px;
+    height: 100px;
+  }
+}
 
 .projectBox {
   display: flex;
@@ -239,23 +278,54 @@ ul {
   margin-right: 200px;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 430px) {
+  .projectBox {
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-direction: column;
+    align-content: center;
+  }
+}
 .projectBox .projectImage {
   width: 40%;
   height: 40%;
   margin-right: 40px;
 }
+@media screen and (max-width: 430px) {
+  .projectBox .projectImage {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+}
 .projectBox .projectText {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 430px) {
+  .projectBox .projectText {
+    text-align: center;
+  }
 }
 .projectBox .projectText .projectTitle {
   font-family: GFS Neohellenic;
   font-size: 40px;
   font-weight: 700;
 }
+@media screen and (max-width: 430px) {
+  .projectBox .projectText .projectTitle {
+    font-size: 30px;
+  }
+}
 .projectBox .projectText .projectMedium {
   font-size: 24px;
   font-style: italic;
   font-weight: 400;
+}
+@media screen and (max-width: 430px) {
+  .projectBox .projectText .projectMedium {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
 }
 
 .progressTitle {
@@ -264,6 +334,11 @@ ul {
   font-weight: 700;
   text-align: center;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 430px) {
+  .progressTitle {
+    font-size: 30px;
+  }
 }
 
 .carasol {
@@ -277,6 +352,12 @@ ul {
   margin-bottom: 100px;
   width: 40%;
   height: 40%;
+}
+@media screen and (max-width: 430px) {
+  .carasol {
+    width: 60%;
+    height: 60%;
+  }
 }
 .carasol .carasolObject {
   width: 100%;

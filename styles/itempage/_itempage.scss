@@ -9,6 +9,10 @@
     width: 200px;
     height: 200px;
     rotate: 90deg;
+    @include respond ('430px'){
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .projectBox{
@@ -18,22 +22,44 @@
     margin-left: 200px;
     margin-right: 200px;
     margin-bottom: 100px;
+    @include respond ('430px'){
+        margin-left: 100px;
+        margin-right: 100px;
+        flex-direction: column;
+        align-content: center;
+    }
+    
     .projectImage{
         width: 40%;
         height: 40%;
         margin-right: 40px;
+        @include respond ('430px'){
+            width: 100%;
+            height: 100%;
+            margin-bottom: 20px;
+        }
     }
     .projectText{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        @include respond ('430px'){
+            text-align: center;
+        }
         .projectTitle{
             font-family: GFS Neohellenic;
             font-size: 40px;
             font-weight: 700;
+            @include respond ('430px'){
+                font-size: 30px;
+            }
         }
         .projectMedium{
             font-size: 24px;
             font-style: italic;
             font-weight: 400;
+            @include respond ('430px'){
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
         }
     }
 }
@@ -44,6 +70,9 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 40px;
+    @include respond ('430px'){
+        font-size: 30px;
+    }
 }
 .carasol{
     display:flex;
@@ -56,6 +85,10 @@
     margin-bottom: 100px;
     width: 40%;
     height: 40%;
+    @include respond ('430px'){
+        width: 60%;
+        height: 60%;
+    }
     .carasolObject{
         width: 100%;
         height: 100%;
