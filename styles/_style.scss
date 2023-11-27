@@ -4,10 +4,11 @@
     src: url("GFSNeohellenic-Regular.ttf");
 }
 
-// body{
-//     background-image: url("../portfolio_bigbg_basecolor-01.png");
-//     background-size: cover;
-// }
+body{
+    background-image: url("../portfolio_bigbg-01.png");
+    background-size: cover;
+    //transform: translate(42px, 18px);
+}
 
 .hamburger{
     width: 40px;
